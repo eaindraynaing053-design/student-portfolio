@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portfolio</title>
+    <link rel="stylesheet" href="C:\Users\USER\OneDrive\Desktop\student-portfolio\style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Student Portfolio</div>
+        <ul class="nav-links">
+            <li><a href="#" onclick="showPage('home')">Home</a></li>
+            <li><a href="#" onclick="showPage('member1')">Member 1</a></li>
+            <li><a href="#" onclick="showPage('member2')">Member 2</a></li>
+            <li><a href="#" onclick="showPage('member3')">Member 3</a></li>
+            <li><a href="#" onclick="showPage('member4')">Member 4</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        
+        <section id="home" class="page-section active">
+            <div class="hero-section">
+                <h1>Welcome to Our Professional Portfolio</h1>
+                <p>We are IT students specializing in modern Web Development and Systems Analysis.</p>
+            </div>
+            
+            <h2 class="section-title">Meet Our Team Members</h2>
+            <div class="member-grid">
+                <div class="member-card" onclick="showPage('member1')">
+                    <img src="photo_2026-07-12_20-28-59.jpg" alt="Eaindray Naing">
+                    <h3>Eaindray Naing</h3>
+                    <p class="Git Manager | Full-Stack Support"></p>
+                    <button class="view-btn">Led the project, managed the GitHub repository and branches, coordinated the team, reviewed and merged code, resolved Git issues, and supported all project development, including HTML, CSS, content, and final integration.</button>
+                </div>
+                <div class="member-card" onclick="showPage('member2')">
+                    <img src="May Chan Myae.jpg" alt="May Chan Myae">
+                    <h3>Member 2</h3>
+                    <p class="HTML Developer"></p>
+                    <button class="view-btn">Developed the website structure using HTML, created page sections, and organized the layout of the portfolio.</button>
+                </div>
+                <div class="member-card" onclick="showPage('member3')">
+                    <img src="photo_2026-07-12_21-28-34.jpg" alt="Aung Pyae Thaw Oo">
+                    <h3>Member 3</h3>
+                    <p class="role">Networking specializing</p>
+                    <button class="view-btn">Understand basic computer networking concepts.
+Identify different types of networks (LAN, WAN).
+Understand IP addresses and basic network devices (Router, Switch).
+Learn basic internet protocols such as HTTP and HTTPS.
+Perform simple network troubleshooting.
+</button>
+                </div>
+                <div class="member-card" onclick="showPage('member4')">
+                    <img src="Swam Yee Htoo.jpg" alt="Swam Yee Htoo">
+                    <h3>Member 4</h3>
+                    <p class="role">Full Stack Developer</p>
+                    <button class="view-btn">View Detail</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="member1" class="page-section">
+            <button class="back-btn" onclick="showPage('home')">← Back to Home</button>
+            <div class="profile-detail">
+                <img src="photo_2026-07-12_20-28-59.jpg" alt="Member 1" class="profile-img">
+                <div class="profile-info">
+                    <h2>Eaindray Naing<br> (Front-end Developer<br>UI Designer(CSS)<br>Content and GitHub Manager)</h2>
+                    <p class="bio">Specialized in building neat, structured, and clean semantic HTML web layouts.</p>
+                    
+                    <h3>Education</h3>
+                    <p>OTHM Level 4 Diploma in Information Technology; Bachelor in Computer Science(Hons)</p>
+                    
+                    <h3>Skills</h3>
+                    <div class="skills-tags">
+                        <span>HTML</span> <span>SEO</span> <span>GitHub</span> <span>Web Layouts</span> <span>CSS</span> <span>JavaScript</span>
+                    </div>
+                    
+                    <h3>Sample Project</h3>
+                    <div class="project-box">
+                        <h4>Golden Brew Café Information System</h4>
+                        <p>Developed the core structural blueprint and data flow navigation system for the café management interface.</p>
+                    </div>
+
+                    <h3>Contact Information</h3>
+                    <p>Email: eaindray@gmail.com | Phone: 09-123456789</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="member2" class="page-section">
+            <button class="back-btn" onclick="showPage('home')">← Back to Home</button>
+            <div class="profile-detail">
+                <img src="May Chan Myae.jpg" alt="Member 2" class="profile-img">
+                <div class="profile-info">
+                    <h2>Member 2 (UI Designer)</h2>
+                    <p class="bio">Passionate about digital aesthetics, color theory, and responsive layouts.</p>
+                    
+                    <h3>Education</h3>
+                    <p>Diploma in Graphic Design & UI/UX Development</p>
+                    
+                    <h3>Skills</h3>
+                    <div class="skills-tags">
+                        <span>Java Script</span> <span>Python</span> <span>HTML</span> <span>CSS</span>
+                    </div>
+                    
+                    <h3>Sample Project</h3>
+                    <div class="project-box">
+                        <h4>International Education Pull-up Banners</h4>
+                        <p></p>
+                    </div>
+
+                    <h3>Contact Information</h3>
+                    <p>Email: maychan162006@gmail.com | Phone: 09-222333444</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="member3" class="page-section">
+            <button class="back-btn" onclick="showPage('home')">← Back to Home</button>
+            <div class="profile-detail">
+                <img src="member3.jpg" alt="Aung Pyae Thaw Oo" class="profile-img">
+                <div class="profile-info">
+                    <h2>Member 3 (Content & GitHub Manager)</h2>
+                    <p class="bio">Focused on system configuration, technical documentation, and continuous development integration.</p>
+                    
+                    <h3>Education</h3>
+                    <p>OTHM Level 4 Computing and Software Engineering</p>
+                    
+                    <h3>Skills</h3>
+                    <div class="skills-tags">
+                        <span>GitHub Workflow</span> <span>Technical Writing</span> <span>Cisco IOS</span> <span>Systems Analysis</span>
+                    </div>
+                    
+                    <h3>Sample Project / Assignment Showcase</h3>
+                    <div class="project-box">
+                        <h4>Mingalar Edu Brand Strategy Script</h4>
+                        <p>Authored the technical promotional copy, visual structure, and event content blueprint for educational video distribution.</p>
+                    </div>
+
+                    <h3>Contact Information</h3>
+                    <p>Email: member3@example.com | Phone: 09-555666777</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="member4" class="page-section">
+            <button class="back-btn" onclick="showPage('home')">← Back to Home</button>
+            <div class="profile-detail">
+                <img src="member4.jpg" alt="Member 4" class="profile-img">
+                <div class="profile-info">
+                    <h2>Member 4 (Full Stack Developer)</h2>
+                    <p class="bio">Enjoys programming complex system logics, state transitions, and database configurations.</p>
+                    
+                    <h3>Education</h3>
+                    <p>B.Sc. in Computer Science</p>
+                    
+                    <h3>Skills</h3>
+                    <div class="skills-tags">
+                        <span>JavaScript</span> <span>Node.js</span> <span>Database Systems (ERD)</span> <span>API Design</span>
+                    </div>
+                    
+                    <h3>Sample Project / Assignment Showcase</h3>
+                    <div class="project-box">
+                        <h4>Weekend Language Course Portal</h4>
+                        <p>Created an integrated registration system template for language learners with real-time class booking rules.</p>
+                    </div>
+
+                    <h3>Contact Information</h3>
+                    <p>Email: member4@example.com | Phone: 09-999888777</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <script>
+        function showPage(pageId) {
+            const sections = document.querySelectorAll('.page-section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+            
+            const activeSection = document.getElementById(pageId);
+            if(activeSection) {
+                activeSection.classList.add('active');
+                window.scrollTo(0, 0);
+            }
+        }
+    </script>
+</body>
+</html>
